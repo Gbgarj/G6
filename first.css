@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Lilita+One&family=Oswald:wght@500&family=Permanent+Marker&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+    color: white;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(15, 15, 15, 0.8)url(mayyon.png);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: darken;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:space-between ;
+    height: 90px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.nav-logo {
+    margin-left: 10px;   
+    margin-top: 20px;
+}
+
+.nav-logo  img {
+    width: 100%;
+    max-width: 90px;
+}
+
+.menu-btn ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-flex;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Black';
+    font-size: 14px;
+    padding: 15px 40px;
+    border-radius: 12px;
+    transition: 0.3s all ease;
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 225, 225);
+}
+
+.home-content {
+    display: block;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 6rem;
+    margin: 90px 0px 30px;
+}
+
+p {
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    font-family: Arial;
+    line-height: 25px;
+    font-size: 1rem;
+}
+
+#btn {
+    display: inline-block; 
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Black';
+    border: 3px solid rgb(0, 255, 255);
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    padding: 1% 6%;   
+    transition: 0.3s;
+    
+}
+
+#btn:hover {
+    background-color: rgb(106, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 5px 40px rgb(0, 255, 255); 
+}  
+
+@media only screen and (max-width: 768px) {
+
+    .nav-logo  img {
+        width: 70px;
+        margin-left: -15px;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    body {
+        background-image: url(cp-bg.jfif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-blend-mode: darken;
+        height: 100vh;
+    }
+
+    #btn {
+      padding: 10px 40px;
+      font-size: 15px;
+      font-size: 12px;
+    }
+
+    h1 {
+       font-size: 50px;
+       margin: 90px 0px 30px;
+
+    }
+
+    p {
+        font-size: 15px;
+        padding: 0px 40px;
+    }
+  }
