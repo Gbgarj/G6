@@ -172,6 +172,7 @@ input[type="submit"]:hover {
 @media only screen and (max-width: 768px) {
     .contact-us {
         display: block;
+        width: 100%;
     }
 
     .contact-us .left,
